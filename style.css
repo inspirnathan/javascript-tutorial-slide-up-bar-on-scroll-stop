@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+div[class^="section-"] {
+  height: 500px;
+}
+
+.section-1 {
+  background-color: skyblue;
+}
+
+.section-2 {
+  background-color: orangered;
+}
+
+.section-3 {
+  background-color: mediumseagreen;
+}
+
+.section-4 {
+  background-color: magenta;
+}
+
+.bar {
+  background-color: white;
+  position: fixed;
+  height: 5.5rem;
+  width: 100%;
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  visibility: hidden;
+  transition: 0.5s;
+  bottom: -7.5rem; /* 5.5rem height + 1rem padding-top + 1rem padding-bottom = 7.5rem */
+}
+
+.bar-visible {
+  visibility: visible;
+  transition: 0.5s;
+  bottom: 0;
+}
